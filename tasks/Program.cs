@@ -696,8 +696,6 @@
 //     res = max - min;
 //     }
 //     return res;    
-
-
 // }
 // Console.WriteLine(Diff(array));
 
@@ -1326,27 +1324,111 @@
 //         }
 //     }
 // }
-// string MinSum(int[,] matr)
+// int Sum(int[,] matr)
 // {
-//     string result = string.Empty;
+//     int sum = 0;
+//     int minSum = 0;
+//     int minNum = 0;
 //     for (int m = 0; m < matr.GetLength(0); m++)
 //     {
-//         int sum = 0;
-
 //         for (int n = 0; n < matr.GetLength(1); n++)
 //         {
-//             sum += matr[m, n];
 
+//             if (m == 0) //если строка первая
+//             {
+//                 sum += matr[m, n];
+//                 minSum += matr[m, n]; //по умолчанию считаем что сумма первой строки минимальная
+//             }
+//             else sum += matr[m, n]; //для всех остальных строк просто считаем сумму
 //         }
-//         result += $"{sum} ";
+
+//         if (sum < minSum)
+//         {
+//             minSum = sum; 
+//             minNum = m; 
+//         }
+//         sum = 0;         
 //     }
-//     return result;
+//     return minNum;
 // }
 // int[,] matrix = new int[4, 4];
 // FillArray(matrix);
 // PrintArray(matrix);
 // Console.WriteLine();
-// Console.WriteLine(MinSum(matrix));
+// Console.WriteLine(Sum(matrix));
+
+//61
+//Найти произведение двух матриц
+
+// void PrintArray(int[,] matr, int[,] matr1)
+// {
+//     for (int m = 0; m < matr.GetLength(0); m++)
+//     {
+//         for (int n = 0; n < matr.GetLength(1); n++)
+//         {
+//             Console.Write($"{matr[m, n]} ");
+//         }
+//         Console.WriteLine();
+//     }
+//     Console.WriteLine();
+//     for (int m = 0; m < matr1.GetLength(0); m++)
+//     {
+//         for (int n = 0; n < matr1.GetLength(1); n++)
+//         {
+//             Console.Write($"{matr1[m, n]} ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+// void FillArray(int[,] matr, int[,] matr1)
+// {
+//     for (int m = 0; m < matr.GetLength(0); m++)
+//     {
+//         for (int n = 0; n < matr.GetLength(1); n++)
+//         {
+//             matr[m, n] = new Random().Next(1, 10);
+//         }
+//     }
+//     for (int m = 0; m < matr1.GetLength(0); m++)
+//     {
+//         for (int n = 0; n < matr1.GetLength(1); n++)
+//         {
+//             matr1[m, n] = new Random().Next(1, 10);
+//         }
+//     }
+
+// }
+
+// void Composition(int[,] matr, int[,] matr1, int[,] compMatr)
+// {
+//     for (int m = 0; m < matr.GetLength(0); m++)
+//     {
+//         for (int n = 0; n < matr.GetLength(1); n++)
+//         {
+//             compMatr[m, n] = matr[m,n]*matr1[m,n];
+//         }
+//     }
+// }
+// void PrintCompArray(int[,] compMatr)
+// {
+//     for (int m = 0; m < compMatr.GetLength(0); m++)
+//     {
+//         for (int n = 0; n < compMatr.GetLength(1); n++)
+//         {
+//             Console.Write($"{compMatr[m, n]} ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// int[,] matrix = new int[4, 4];
+// int[,] matrix1 = new int[4, 4];
+// int[,] compMatrix = new int[4,4];
+// FillArray(matrix, matrix1);
+// PrintArray(matrix, matrix1);
+// Console.WriteLine();
+// Composition(matrix, matrix1, compMatrix);
+// PrintCompArray(compMatrix);
 
 // 66
 // Показать натуральные числа от 1 до N, N задано
@@ -1399,7 +1481,7 @@
 // int Ack(int m, int n)
 // {
 //     if (m>6 || n>6 || m<0 || n<0) return -1;
-    
+
 //     if (m == 0)
 //     {
 //         return n + 1;
@@ -1439,18 +1521,18 @@
 // 74
 // В некотором машинном алфавите имеются четыре буквы «а», «и», «с» и «в». 
 // Покажите все слова, состоящие из n букв, которые можно построить из букв этого алфавита
-int n =1;
-void Words(string alphabet, char[] word, int length = 0)
-{
-    if (length == word.Length)
-    {
-        Console.WriteLine($"{n++} {new String(word)}");
-        return;
-    }
-    for (int i = 0; i<alphabet.Length; i++)
-    {
-        word[length] = alphabet[i];
-        Words(alphabet, word, length + 1);
-    }
-}
-Words("аисв", new char[3]);
+// int n =1;
+// void Words(string alphabet, char[] word, int length = 0)
+// {
+//     if (length == word.Length)
+//     {
+//         Console.WriteLine($"{n++} {new String(word)}");
+//         return;
+//     }
+//     for (int i = 0; i<alphabet.Length; i++)
+//     {
+//         word[length] = alphabet[i];
+//         Words(alphabet, word, length + 1);
+//     }
+// }
+// Words("аисв", new char[3]);
