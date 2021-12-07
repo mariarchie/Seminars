@@ -1,0 +1,16 @@
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\bin\Debug\net6.0\tasks.exe
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\bin\Debug\net6.0\tasks.deps.json
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\bin\Debug\net6.0\tasks.runtimeconfig.json
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\bin\Debug\net6.0\tasks.dll
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\bin\Debug\net6.0\ref\tasks.dll
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\bin\Debug\net6.0\tasks.pdb
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\obj\Debug\net6.0\tasks.GlobalUsings.g.cs
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\obj\Debug\net6.0\tasks.csproj.AssemblyReference.cache
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\obj\Debug\net6.0\tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\obj\Debug\net6.0\tasks.AssemblyInfoInputs.cache
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\obj\Debug\net6.0\tasks.AssemblyInfo.cs
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\obj\Debug\net6.0\tasks.csproj.CoreCompileInputs.cache
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\obj\Debug\net6.0\tasks.dll
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\obj\Debug\net6.0\ref\tasks.dll
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\obj\Debug\net6.0\tasks.pdb
+C:\Users\Админ\Documents\Marianna\seminars c#\tasks\obj\Debug\net6.0\tasks.genruntimeconfig.cache
